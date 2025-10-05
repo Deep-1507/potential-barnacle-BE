@@ -24,6 +24,11 @@ app.use(express.json());
 app.use("/api/faculty", facultyRoutes);
 app.use("/api/upload", uploadRoutes);
 
+app.get("/", (req, res) => {
+    res.send("Server is running!");
+});
+
+
 // 404 Handler
 app.use((req, res) => {
     res.status(404).json({ error: 'Route not found' });
