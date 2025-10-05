@@ -3,8 +3,8 @@ import mongoose from "mongoose";
 import cors from "cors";
 import path from "path";
 
-import facultyRoutes from "../routers/facultyRouter.js";
-import uploadRoutes from "../routers/uploadRouter.js";
+import facultyRoutes from "./routers/facultyRouter.js";
+import uploadRoutes from "./routers/uploadRouter.js";
 
 const app = express();
 
